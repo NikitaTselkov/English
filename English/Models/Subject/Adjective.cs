@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,6 +10,8 @@ namespace English.Models.Subject
     /// <summary>
     /// Прилагательное.
     /// </summary>
+    [DataContract]
+    [KnownType(typeof(Adjective))]
     public class Adjective : NounGroup
     {
         /// <summary>
@@ -19,7 +22,7 @@ namespace English.Models.Subject
         /// <param name="translation"> Перевод. </param>
         public Adjective(string word, string transcription, string translation)
         {
-            base.AddNewWord(word, transcription, "", "", translation);
+            base.AddNewWord(word, transcription, "", "", translation, "");
         }
 
     }

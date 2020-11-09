@@ -51,6 +51,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\System.Windows.Interactivity.dll</HintPath>
     </Reference>
@@ -82,7 +83,7 @@
     <Compile Include="Models\Subject\NounGroup.cs" />
     <Compile Include="Models\Subject\Pronoun.cs" />
     <Compile Include="Models\Subject\TypesOfPronouns.cs" />
-    <Compile Include="Models\Verb.cs" />
+    <Compile Include="Models\Predicate\Verb.cs" />
     <Compile Include="Views\App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
