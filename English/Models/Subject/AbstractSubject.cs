@@ -22,6 +22,11 @@ namespace English.Models.Subject
         public string Transcription { get; private set; }
 
         /// <summary>
+        /// Перевод.
+        /// </summary>
+        public string Translation { get; private set; }
+
+        /// <summary>
         /// Множественное число.
         /// </summary>
         public string Plural { get; private set; }
@@ -38,12 +43,14 @@ namespace English.Models.Subject
         /// <param name="transcription"> Транскрипция. </param>
         /// <param name="plural"> Множественное число. </param>
         /// <param name="pluralTranscription"> Транскрипция Множественного числа. </param>
-        public AbstractSubject(string word, string transcription, string plural, string pluralTranscription)
+        /// <param name="translation"> Перевод. </param>
+        protected void AddNewWord(string word, string transcription, string plural, string pluralTranscription, string translation)
         {
             Word = word;
             Transcription = transcription;
             Plural = plural;
             PluralTranscription = pluralTranscription;
+            Translation = translation;
         }
 
         public AbstractSubject() { }

@@ -14,13 +14,13 @@ namespace English.Models.Subject
         /// <summary>
         /// Группа существительных.
         /// </summary>
-        public string[] NounsGroup { get; private set; }
+        public AbstractSubject[] NounsGroup { get; private set; }
 
         /// <summary>
         /// Установка значений.
         /// </summary>
         /// <param name="nounsGroup"> Группа существительных. </param>
-        public NounGroup(string[] nounsGroup)
+        public NounGroup(AbstractSubject[] nounsGroup)
         {
             NounsGroup = nounsGroup;
         }
